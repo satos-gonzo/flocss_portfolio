@@ -1,0 +1,14 @@
+.p-footer{
+  height: 80px;
+  padding: 0 $space_xl 0 $space_xl;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(){
+    font-size: $font-size_s;
+  }
+
+
+}

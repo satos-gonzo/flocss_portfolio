@@ -1,0 +1,47 @@
+/**
+* ハンバーガーメニューの記述
+* ========================== */
+.p-hamburgerMenu{
+  display: none;
+}
+.p-hamburgerMenu{
+  @include mq(){
+  display: inline-block;
+  box-sizing: border-box;
+  // transitionは後で設定
+  position: relative;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+
+// 3本線すべてに共通する箇所
+.p-hamburgerMenu__line{
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: $font-color-default;
+  cursor: pointer;
+  transition: all .5s;
+  z-index: 3;
+}
+
+.p-hamburgerMenu__line:nth-of-type(1){
+top: 0;
+}
+.p-hamburgerMenu__line:nth-of-type(2){
+  top: 14px;
+}
+.p-hamburgerMenu__line:nth-of-type(3){
+  bottom: 0;
+}
+}
+
+
+
+
+
+  }

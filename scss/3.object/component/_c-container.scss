@@ -1,0 +1,29 @@
+/**
+* container
+* ========================== */
+.c-container{
+  width: $site-width;
+  padding: 80px 0 100px 0;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+}
+.c-container__title{
+  font-family: $font-European1;
+  font-size: $font-size_3l;
+  text-align: center;
+  margin-bottom: $space_5l;
+}
+
+.c-containerColor{
+  background: $base-color3;
+  box-shadow: 0 0 8px 2px #ddd inset;
+}
+
+/**
+* メディアクエリ
+* ========================== */
+.c-container{
+  @include mq(){
+    width: 100%;
+  }
+}

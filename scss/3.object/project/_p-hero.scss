@@ -1,0 +1,16 @@
+.p-hero{
+  background-image: url("../images/office-1730939_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @include mq(){
+    width: 100%;
+  }
+}

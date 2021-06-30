@@ -1,0 +1,22 @@
+/*
+メディアクエリ
+======================================/**/
+// ブレイクポイントの設定
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+/**
+* mq()で定義した変数を呼び出せるようにする
+* -------------------------- */
+// map-get()の第一引数に変数名、第二引数にマップ型のキーを渡すと、マップ型の値が返る
+// デフォルト値は：414pxに指定
+// 呼び出す時は@include mq()
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

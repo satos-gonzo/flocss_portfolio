@@ -1,0 +1,18 @@
+.p-returnTop{
+    position: relative;
+}
+
+.p-returnTop__link{
+    /*-----必須-----*/
+    position: fixed;
+    bottom: $space_m;
+    right: $space_m;
+
+    /*-----装飾-----*/
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background-color: $btn-color-top;
+    color: $base-color1;
+}

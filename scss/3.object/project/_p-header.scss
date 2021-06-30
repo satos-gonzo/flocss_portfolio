@@ -1,0 +1,78 @@
+/**
+* header全体
+* ========================== */
+.p-header{
+  height: 80px;
+  padding: 0 $space_xl 0 $space_xl;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  transition: all .5s;
+  z-index: 2;
+}
+
+.p-header__list{
+  display: flex;
+}
+.p-header__list{
+  margin-right: $space_l;
+  font-family: $font-European1;
+  font-weight: 700;
+}
+.p-header__link{
+  transition: all .5s;
+
+  &:hover{
+    font-weight: 900;
+    color: $main-color1;
+    text-decoration: underline;
+    transition: all .5s;
+  }
+}
+
+/**
+* メディアクエリ
+* ========================== */
+// header全体のスタイル変更
+.p-header{
+  @include mq(){
+    height: 60px;
+  }
+}
+
+// 414px以下になったらnavメニューのスタイルを変える
+// L navメニュを縦に並べる
+// L 画面に右に出す
+.p-header__menu{
+  @include mq(){
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    z-index: 2;
+    background: rgba(255,255,255,0.85);
+    transition: all .5s;
+  }
+}
+.p-header__list{
+  @include mq(){
+  display: block;
+  }
+}
+.p-header__list{
+  @include mq(){
+  margin-right: initial;
+  }
+}
+.p-header__link{
+  @include mq(){
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+}

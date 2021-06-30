@@ -1,0 +1,43 @@
+.p-contact{
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+.p-contact_text{
+  display: block;
+  text-align: center;
+  margin: 0 0 $space_m 0;
+}
+.p-contact__icon{
+  font-size: 50px;
+  text-align: center;
+}
+// メールアイコン
+.fa-envelope-square{
+  transition: all .5s;
+
+  &:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: all .5s;
+  }
+}
+// Linkedinアイコン
+.fa-linkedin{
+  transition: all .5s;
+
+  &:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: all .5s;
+  }
+}
+// twitterアイコン
+.fa-twitter-square{
+  transition: all .5s;
+
+  &:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: all .5s;
+  }
+}

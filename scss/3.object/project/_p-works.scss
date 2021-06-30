@@ -1,0 +1,33 @@
+.p-works__wrap{
+  display: flex;
+  margin-right: -$space_l;
+  flex-wrap: wrap;
+
+  @include mq(){
+    margin: initial;
+  }
+
+}
+.p-works__container{
+  width: calc( 33.3% - #{$space_l});
+  margin-right: $space_l;
+
+  @include mq(){
+    width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 0 30px;
+  }
+}
+
+.p-works__image{
+  width: 100%;
+  vertical-align: bottom;
+}
+.p-works__imgageTitle{
+  text-align: center;
+  margin: $space_m 0 $space_m 0;
+}
+.p-works__imageDetail{
+  text-align: center;
+  margin: $space_m 0 $space_m 0;
+}

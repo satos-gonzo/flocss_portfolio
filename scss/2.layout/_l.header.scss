@@ -1,0 +1,12 @@
+.l-header{
+  width: 100%;
+  @include mq(){
+    width: 100%;
+  }
+}
+.l-footer{
+  @include mq(){
+    width: 100%;
+    font-size: $font-size_default;
+  }
+}

@@ -1,0 +1,8 @@
+.p-header__title{
+  font-family: $font-European1;
+  font-size: $font-size_2l;
+
+  @include mq(){
+    font-size: $font-size_l;
+  }
+}

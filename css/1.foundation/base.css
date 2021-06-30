@@ -1,0 +1,9 @@
+html, body {
+  width: 100%;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+}

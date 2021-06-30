@@ -1,0 +1,19 @@
+html, body {
+  width: 100%;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  font-size: $font-size_default;
+  font-family: $font-japanese;
+  color: $font-color_default;
+}
+
+a{
+  color: $font-color_default;//headerタグでfont指定してもかわらないｂので個別に指定
+  text-decoration: none;
+}
+
+
+//a:hover{
+  //color: $main-color2;
+  //transition: .3s;
+//}

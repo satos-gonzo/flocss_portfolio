@@ -1,0 +1,60 @@
+// =========================================
+// 変数
+// =========================================
+/* 幅・間隔 */
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_2l: 25px;
+$space_3l: 30px;
+$space_4l: 35px;
+$space_5l: 40px;
+
+/* 横幅 */
+$site-width: 980px;
+
+
+/**
+* フォント
+* ========================== */
+/* フォントサイズ */
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 20px;
+$font-size_xl: 24px;
+$font-size_2l: 28px;
+$font-size_3l: 30px;
+$font-size_4l: 38px;
+
+/* 使用フォント：和文*/
+$font-japanese: Quicksand,"YuGothic", "Hiragino Kaku Gothic ProN", "Meiryo", "Osaka", "MS PGothic", sans-serif;
+
+/* 使用フォント：欧文*/
+$font-European1: 'Lato';
+$font-European2: 'Noto Sans JP';
+
+/**
+* 配色
+* ========================== */
+/* baseは白・グレー系 */
+$base-color1: #FFFFFF;
+$base-color2:#F0F3F5;
+$base-color3: #F8F7FC;
+
+/* メインカラー：ピンク系 */
+
+/* アクセントカラー：黒系・その他 */
+$main-color1: rgba(70,130,180,1.0);
+
+
+/* フォントの色 */
+$font-color-default: #3B4043;
+
+// ボタンの色
+$btn-color-top: #333;
+
+
+/* hover時の色 */
+/* Containerのborderカラー */
