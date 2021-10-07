@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-  <title>HTML・CSS部活上級OP</title>
+  <title>works</title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
   <!-- header -->
   <!-- *** -->
   <header class="l-header p-header js-float-menu">
-    <h1 class="p-header__title"><a href="index.html">My portofolio</a></h1>
+    <h1 class="p-header__title"><a href="index.html">My profile</a></h1>
 
     <!-- *** -->
     <!-- ハンバーガーメニュー -->
@@ -60,11 +60,10 @@
           <div class="p-profile__textContainer">
             <div class="p-profile__name">shusuke sato</div>
             <div class="p-profile__detail">
-              <p>1986年1月生まれ　山形県出身　東京都江戸川区在住</p>
-              大学卒業後、銀行（4年3ヶ月）・人材ベンチャー（7年）を経験<br>
-              現在はシステム会社にてIT営業に従事中<br>
-              業務の傍ら独学でフロントエンドの学習中。<br>
-              プライベートでは家事・育児にも奮闘中。</p>
+              <p>山形県出身 江戸川区在住</p>
+              大学卒業後、銀行・人材ベンチャーを経験を経て<br>
+              現在はシステム会社にてIT営業に従事中。<br>
+              業務の傍ら独学でフロントエンドの学習中。<br></p>
             </div>
           </div>
       </section>
@@ -101,9 +100,9 @@
               JavaScript/jQuery/Vue.js
             </div>
             <div class="p-skill__detail">
-              <p>フロントエンドの環境構築<br>、webアプリケーションの制作が
-              可能。<br>
-              Vue.jsを用いたSPAの開発・リリース・<br>運用も個人で対応中。</p>
+              <p>基本的なDOM操作、アニメーションの実装が可能（jQuery含む）。</p>
+              <p>Vue.js/Reactではコンポーネントを意識した設計、簡易なアプリケーションの作成が可能。</p>
+              <p>babel,gulp,webpack等を用いたフロントエンドに必要な環境構築が可能。</p>
             </div>
           </div>
 
@@ -115,9 +114,9 @@
             </div>
             <div class="p-skill__detail">
               <p>
-                フルスクラッチでアプリケーションを開発・運用。
-                Fuelphp・・・基本的なCRUD処理、アプリケーションの制作が可能。
-                Laravel・・・写真共有アプリの開発経験あり。
+                フレークワークを使わずにアプリケーション実装が可能。
+                Fuelphpでは基本的なCRUD処理、アプリケーションの制作が可能。
+                Laravelは現在学習中。
               </p>
             </div>
           </div>
@@ -140,8 +139,7 @@
               その他
             </div>
             <div class="p-skill__detail">
-              <p>Githubを使ったソースのバーション管理が可能。
-              npm/yarn/gulpを使ったフロンドエンドの環境構築が可能。</p>
+              <p>Githubを使ったソースのバーション管理が可能。アカウントは<a class="p-skill__gitLink" href="https://github.com/satos-gonzo">こちら</a></p>
             </div>
           </div>
 
@@ -159,30 +157,158 @@
         <div class="p-works__wrap">
 
           <!-- コンテンツ1つ1つ -->
-          <div class="p-works__container">
+          <!-- スクラッチアプリ -->
+          <div class="p-works__container js-click-modal">
             <a href="" class="p-works__link">
-              <img src="./images/staff6.jpg" alt="" class="p-works__image">
-              <div class="p-works__imgageTitle">タイトル</div>
-              <div class="p-works__imageDetail">ああああ</div>
+              <img src="./images/skillshare.png" alt="" class="p-works__image">
+              <div class="p-works__imgageTitle">日報記入・共有アプリ</div>
             </a>
           </div>
 
-          <!-- コンテンツ1つ1つ -->
-          <div class="p-works__container">
+          <div class="p-works__modal js-click-modal-width">
+            <div class="p-works__modalCover">
+              <div class="p-works__modalContent">
+                <!-- modal上部 -->
+                <div class="p-works__modalTop">
+                  <h2 class="p-works__modalTitle">日報記入・共有アプリ</h2>
+                  <i class="fas fa-times js-close-modal"></i>
+                </div>
+                <!-- modal中部 -->
+                <div class="p-works__modalMiddle">
+
+                  <img src="./images/skillshare.png" alt="" class="p-works__modalImage">
+
+                  <div class="p-works__content">
+                    <div class="p-works__contentTop">
+                      <div class="p-works__languageWrap">
+                        <h3 class="p-works__contentTitle">使用言語</h3>
+                        <div class="p-works__languageText">HTML/CSS/JavaScript/php</div>
+                      </div>
+                      <div class="p-works__workingHourWrap">
+                        <h3 class="p-works__contentTitle">作成時間</h3>
+                        <div class="p-works__workingHourText">60時間</div>
+                      </div>
+                    </div>
+                    <div class="p-works__conceptWrap">
+                      <h3 class="p-works__contentTitle">概要</h3>
+                      <div class="p-works__conceptText">あああああああああああああああああああああああああああああああ</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- modal下段 -->
+                <div class="p-works__btnContainer">
+                  <a href="https://contents.shusweb.com/skillshare/php/signup.php" class="p-works__btnLink"><button class="p-works__btnOutput">実物を見る</button></a>
+                  <a href="https://contents.shusweb.com/skillshare/php/signup.php" class="p-works__btnLink"><button class="p-works__btnBlog">制作ブログ</button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--
+            // ここがらがvue===============================================
+            // Vue
+            //===========================================================
+          -->
+          <div class="p-works__container js-click-modal">
             <a href="" class="p-works__link">
-              <img src="./images/staff6.jpg" alt="" class="p-works__image">
-              <div class="p-works__imgageTitle">タイトル</div>
-              <div class="p-works__imageDetail">ああああ</div>
+              <img src="./images/vueTodo.png" alt="" class="p-works__image">
+              <div class="p-works__imgageTitle">todoリスト（Vue.js）</div>
             </a>
           </div>
 
-          <!-- コンテンツ1つ1つ -->
-          <div class="p-works__container">
+          <div class="p-works__modal js-click-modal-width">
+            <div class="p-works__modalCover">
+              <div class="p-works__modalContent">
+                <!-- modal上部 -->
+                <div class="p-works__modalTop">
+                  <h2 class="p-works__modalTitle">todoリスト（Vue.js）</h2>
+                  <i class="fas fa-times js-close-modal"></i>
+                </div>
+                <!-- modal中部 -->
+                <div class="p-works__modalMiddle">
+
+                  <img src="./images/vueTodo.png" alt="" class="p-works__modalImage">
+
+                  <div class="p-works__content">
+                    <div class="p-works__contentTop">
+                      <div class="p-works__languageWrap">
+                        <h3 class="p-works__contentTitle">使用言語</h3>
+                        <div class="p-works__languageText">JavaScript(Vue.js)
+                        </div>
+                      </div>
+                      <div class="p-works__workingHourWrap">
+                        <h3 class="p-works__contentTitle">作成時間</h3>
+                        <div class="p-works__workingHourText">約20時間</div>
+                      </div>
+                    </div>
+                    <div class="p-works__conceptWrap">
+                      <h3 class="p-works__contentTitle">概要</h3>
+                      <div class="p-works__conceptText">あああああああああああああああああああああああああああああああ</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- modal下段 -->
+                <div class="p-works__btnContainer">
+                  <a href="https://shusweb.com/contents/vue_todoList/index.html" class="p-works__btnLink"><button class="p-works__btnOutput">実物を見る</button></a>
+                  <a href="https://shusweb.com/blog/programming/javascript/vue_todo/" class="p-works__btnLink"><button class="p-works__btnBlog">制作ブログ</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+            // ここがらがreact===============================================
+            // React
+            //===========================================================
+           -->
+          <div class="p-works__container js-click-modal">
             <a href="" class="p-works__link">
-              <img src="./images/staff6.jpg" alt="" class="p-works__image">
-              <div class="p-works__imgageTitle">タイトル</div>
-              <div class="p-works__imageDetail">ああああ</div>
+              <img src="./images/ReactTodo.png" alt="" class="p-works__image">
+              <div class="p-works__imgageTitle">todoリスト（React）</div>
             </a>
+          </div>
+
+          <div class="p-works__modal js-click-modal-width">
+            <div class="p-works__modalCover">
+              <div class="p-works__modalContent">
+                <!-- modal上部 -->
+                <div class="p-works__modalTop">
+                  <h2 class="p-works__modalTitle">todoリスト（React）</h2>
+                  <i class="fas fa-times js-close-modal"></i>
+                </div>
+                <!-- modal中部 -->
+                <div class="p-works__modalMiddle">
+
+                  <img src="./images/ReactTodo.png" alt="" class="p-works__modalImage">
+
+                  <div class="p-works__content">
+                    <div class="p-works__contentTop">
+                      <div class="p-works__languageWrap">
+                        <h3 class="p-works__contentTitle">使用言語</h3>
+                        <div class="p-works__languageText">JavaScript(React)
+                        </div>
+                      </div>
+                      <div class="p-works__workingHourWrap">
+                        <h3 class="p-works__contentTitle">作成時間</h3>
+                        <div class="p-works__workingHourText">約20時間</div>
+                      </div>
+                    </div>
+                    <div class="p-works__conceptWrap">
+                      <h3 class="p-works__contentTitle">概要</h3>
+                      <div class="p-works__conceptText">あああああああああああああああああああああああああああああああ</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- modal下段 -->
+                <div class="p-works__btnContainer">
+                  <a href="https://shusweb.com/contents/vue_todoList/index.html" class="p-works__btnLink"><button class="p-works__btnOutput">実物を見る</button></a>
+                  <a href="https://shusweb.com/blog/programming/javascript/react_todo/" class="p-works__btnLink"><button class="p-works__btnBlog">制作ブログ</button></a>
+                </div>
+              </div>
+            </div>
           </div>
 
 
@@ -203,8 +329,8 @@
 
           <p class="p-contact_text">お気軽にご連絡ください！</p>
           <div class="p-contact__icon">
-            <i class="fas fa-envelope-square"></i>
-            <a href="www.linkedin.com/in/shussato"><i class="fab fa-linkedin"></i></a>
+            <a href="https://shusweb.com/blog/contack/"><i class="fas fa-envelope-square"></i></a>
+            <a href="https://www.linkedin.com/in/shussato/"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/Gonzo0124"><i class="fab fa-twitter-square"></i></a>
           </div>
 

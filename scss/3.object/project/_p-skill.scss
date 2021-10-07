@@ -17,6 +17,7 @@
   background: $base-color1;
   border: 3px solid $base-color1;
   border-radius: 3px;
+  box-shadow: 0 0 6px grey;
 
   @include mq(){
     width: 100%;
@@ -35,5 +36,14 @@
 .p-skill__detail{
   @include mq(){
     font-size: $font-size_s;
+  }
+}
+
+.p-skill__gitLink{
+  transition: all .5s;
+
+  &:hover{
+    color: $main-color1;
+    border-bottom: 1px solid $main-color1;
   }
 }

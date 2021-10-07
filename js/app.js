@@ -101,3 +101,40 @@ $(document).ready(function () {
     return false;
   });
 });
+
+/* 5.モーダルウィンドウ */
+// =========================================
+// 処理の流れ
+// =========================================
+// js-click-modalをクリックしたらイベントセット
+// 画面リロードの防止
+// 非表示になっているmodal-widthを表示
+// 閉じるを押すと非表示にする。
+// modaltargetにmarginleftをつけて中央表示
+
+$('.js-click-modal').on('click', function (event) {
+  event.preventDefault();
+
+  // DOMを取得する
+  // DOMの兄弟要素を取得する（モーダル全体）
+  // モーダルカバー
+  // モーダルのコンテンツ
+  let $clickTarget = this;
+  let modalTarget = $clickTarget.nextElementSibling;
+  let modalCover = modalTarget.firstElementChild;
+  let modalContent = modalCover.firstElementChild;
+
+  $(modalContent).slideToggle();
+  $(modalCover).show();
+});
+
+$('.js-close-modal').on('click', function () {
+
+  let dom = this;
+  let modalContent = dom.closest('.p-works__modalContent');
+  let modalCover = dom.closest('.p-works__modalCover');
+
+  $(modalContent).slideToggle();
+  $(modalCover).hide();
+
+});

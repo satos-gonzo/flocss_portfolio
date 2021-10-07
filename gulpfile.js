@@ -41,5 +41,9 @@ gulp.task("prefix", function () {
 // -----------------------------------------------------
 gulp.task('watch', () => {
   watch('./scss/**/*.scss', gulp.series('sass')),//ccssフォルダに変更があったらタスクの実行
+    //watch('./dist/*.css', gulp.series('sass'));
     watch('./css/**/*.css', gulp.series('prefix'));
+  //watch('./dist/*.css', gulp.series('prefix'));
 });
+
+// scss直下フォルダに変更があったらタスクの実行

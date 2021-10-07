@@ -42,18 +42,23 @@ $font-European2: 'Noto Sans JP';
 $base-color1: #FFFFFF;
 $base-color2:#F0F3F5;
 $base-color3: #F8F7FC;
+$base-color4:rgba(80,80,80,0.6);
 
 /* メインカラー：ピンク系 */
 
 /* アクセントカラー：黒系・その他 */
 $main-color1: rgba(70,130,180,1.0);
 
-
 /* フォントの色 */
 $font-color-default: #3B4043;
 
 // ボタンの色
 $btn-color-top: #333;
+$btn-color-modal1:rgba(093,186,234,1.0);
+$btn-color-modal2:rgba(170,207,077,1.0);
+
+// border
+
 
 
 /* hover時の色 */
